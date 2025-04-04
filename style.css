@@ -1,7 +1,12 @@
+@font-face {
+    font-family: 'CustomFont';
+    src: url('fonts/custom-font.ttf');
+}
+
 body {
     margin: 0;
-    font-family: 'Arial', sans-serif;
-    background-color: #111;
+    font-family: 'CustomFont', sans-serif;
+    background-color: #0c0c0c;
     color: white;
     text-align: center;
 }
@@ -34,19 +39,28 @@ body {
     100% { background-position: 0 100px; }
 }
 
+#character {
+    position: absolute;
+    bottom: 15%;
+    left: 50%;
+    transform: translateX(-50%);
+    height: 50%;
+    transition: opacity 0.5s;
+}
+
 #dialog-box {
     position: absolute;
     bottom: 10%;
     left: 50%;
     transform: translateX(-50%);
     width: 80%;
-    background: rgba(0, 0, 0, 0.7);
+    background: rgba(0, 0, 0, 0.8);
     padding: 20px;
     border-radius: 10px;
 }
 
 #options button {
-    background: #007BFF;
+    background: #0056b3;
     color: white;
     border: none;
     padding: 10px;
@@ -55,5 +69,5 @@ body {
 }
 
 #options button:hover {
-    background: #0056b3;
+    background: #003f7f;
 }

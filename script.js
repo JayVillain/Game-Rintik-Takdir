@@ -1,26 +1,29 @@
 const dialogText = document.getElementById("dialog-text");
 const optionsContainer = document.getElementById("options");
 const background = document.getElementById("background");
+const character = document.getElementById("character");
 const rainSound = document.getElementById("rain-sound");
 const motorSound = document.getElementById("motor-sound");
+const bellSound = document.getElementById("bell-sound");
 
 // Data cerita
 const story = [
-    { text: "Malam itu, hujan turun deras. Aku menyalakan rokokku sambil menunggu anak-anak klub motor datang.", next: 1 },
-    { text: "Aku melihat seorang gadis berdiri di ujung halte, menggenggam payung yang tak terbuka.", next: 2 },
-    { text: "Hei, kamu nggak apa-apa?", choices: [
+    { text: "Hujan deras mengguyur kota. Aku bersandar di halte, merasakan dinginnya udara malam.", next: 1 },
+    { text: "Seorang gadis berdiri di ujung halte, menggenggam payung yang tak terbuka.", next: 2, character: "assets/amalia.png" },
+    { text: "Aku menatapnya, lalu bertanya pelan...", choices: [
         { text: "Menawarkan tumpangan", next: 3 },
-        { text: "Meninggalkannya", next: 10 }
+        { text: "Diam saja", next: 6 }
     ] },
-    { text: "Aku bisa nganterin kamu pulang. Aku ada motor di seberang sana.", next: 4 },
-    { text: "Baiklah… kalau kamu tidak keberatan.", next: 5 },
-    { text: "Aku menyalakan motorku. Amalia duduk di belakangku dengan ragu.", action: "playMotor", next: 6 },
-    { text: "Pegangan yang kuat.", next: "chapter2" },
-
-    // Bad Ending
-    { text: "Ah, terserah dia. Bukan urusanku.", next: 11 },
-    { text: "Beberapa hari kemudian, aku mendengar kabar bahwa seorang gadis ditemukan pingsan di halte yang sama.", next: 12 },
-    { text: "Saat aku melihat fotonya di berita, aku terkejut. Itu Amalia.", next: "bad_ending" }
+    { text: '"Hei, kamu kedinginan? Aku bisa antar kamu pulang."', next: 4 },
+    { text: "Amalia menatapku ragu, lalu mengangguk pelan.", next: 5 },
+    { text: "Aku menghidupkan motor. Amalia duduk di belakangku, tangannya sedikit gemetar.", action: "playMotor", next: 7 },
+    { text: "Saat motor melaju di jalan basah, aku bertanya...", choices: [
+        { text: '"Kamu sering naik motor?"', next: 8 },
+        { text: '"Kenapa sendirian di halte?"', next: 9 }
+    ] },
+    { text: '"Aku jarang naik motor... tapi malam ini aku gak punya pilihan lain."', next: 10 },
+    { text: '"Aku sedang menunggu seseorang... tapi dia tidak datang."', next: 10 },
+    { text: "Aku mengangguk. Malam ini terasa lebih panjang dari biasanya.", next: "chapter2" }
 ];
 
 let currentIndex = 0;
@@ -29,6 +32,13 @@ function showDialog(index) {
     const scene = story[index];
     dialogText.textContent = scene.text;
     optionsContainer.innerHTML = "";
+
+    if (scene.character) {
+        character.src = scene.character;
+        character.style.display = "block";
+    } else {
+        character.style.display = "none";
+    }
 
     if (scene.choices) {
         scene.choices.forEach(choice => {
@@ -48,10 +58,6 @@ function showDialog(index) {
 
     if (scene.next === "chapter2") {
         alert("Chapter 1 selesai! Lanjut ke Chapter 2...");
-    }
-
-    if (scene.next === "bad_ending") {
-        alert("Bad Ending! Amalia pingsan dan masuk berita...");
     }
 }
 
