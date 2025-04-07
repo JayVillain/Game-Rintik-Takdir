@@ -85,7 +85,7 @@ export const chapterData = [
   **Jaxy:** *Oke.*  
   Dan tiba-tiba, jantungnya berdetak lebih kencang dari biasanya.`,
       side: "left",
-      next: null
+      next: "chapter10"
     }
   ];
   

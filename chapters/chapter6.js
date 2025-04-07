@@ -93,7 +93,7 @@ export const chapterData = [
       text: `Malam itu, hujan terus turun, membawa keheningan dan pengakuan.  
   Dalam kehangatan yang tercipta, Jaxy dan Amalia saling berbagi luka dan harapan, membuka lembaran baru dalam kisah mereka.`,
       side: "left",
-      next: null
+      next: "chapter7"
     }
   ];
   

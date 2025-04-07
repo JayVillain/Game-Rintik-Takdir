@@ -115,7 +115,7 @@ export const chapterData = [
   Setelah itu, ia berbalik dan berjalan menuju pintu kosnya.  
   Jaxy hanya bisa menatapnya pergi, dan entah kenapa, kali ini suara hujan tidak terdengar menenangkan lagi.`,
       side: "right",
-      next: null
+      next: "chapter9"
     }
   ];
   

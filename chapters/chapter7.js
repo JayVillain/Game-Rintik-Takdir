@@ -111,7 +111,7 @@ export const chapterData = [
   Jaxy merasa ada sesuatu yang kosong di dadanya ketika mendengar kata-kata Amalia. Ia bertanya dalam hati, apakah ini awal dari perasaan yang lebih dalam atau hanya ketakutan kehilangan?  
   Di balik segala keraguan, Jaxy tahu bahwa kehadiran Amalia telah mengubah hidupnya selamanya.`,
       side: "left",
-      next: null
+      next: "chapter8"
     }
   ];
   
