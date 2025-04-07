@@ -104,6 +104,6 @@ Amalia tersenyum. “Malam ini… lo kayak pahlawan.”
 “Gue bukan pahlawan.”  
 Dan malam itu, dua orang asing menemukan satu benang yang menghubungkan mereka.`,
     side: "left",
-    next: null // ending utama
+    next: "chapter2"// ending utama
   }
 ];

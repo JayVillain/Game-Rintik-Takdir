@@ -90,7 +90,7 @@ export const chapterData = [
     {
       text: `Di tengah derasnya hujan yang terdengar dari luar, Jaxy dan Amalia tetap duduk di kedai kopi itu. Tanpa banyak kata, keduanya menyadari bahwa pertemuan ini adalah awal dari kemungkinan untuk menyembuhkan luka lama dan membuka lembaran baru.`,
       side: "left",
-      next: null
+      next: "chapter5"
     }
   ];
   

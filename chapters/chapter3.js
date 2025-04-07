@@ -96,7 +96,7 @@ export const chapterData = [
       text: `Malam itu, Jaxy merasa terguncang. Mungkin untuk pertama kalinya, ia mulai mempertanyakan dirinya sendiri dan alasan di balik keengganannya membuka diri.  
   Di balik dinginnya kata-kata, tersimpan rasa takut dan kerinduan yang tak bisa ia akui.`,
       side: "right",
-      next: null
+      next: "chapter4"
     }
   ];
   

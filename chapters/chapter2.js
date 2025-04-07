@@ -74,7 +74,7 @@ export const chapterData = [
       text: `Meski hari tampak biasa, Jaxy tahu bahwa pertemuan dengan Amalia telah mengubah ritme hidupnya.  
   Di antara tawa dan canda di bengkel, pikirannya terus melayang pada malam itu, menandai awal dari sesuatu yang baru.`,
       side: "left",
-      next: null
+      next: "chapter3"
     }
   ];
   

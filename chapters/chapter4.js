@@ -99,7 +99,7 @@ export const chapterData = [
   "Oke."  
   Malam itu, meski hati masih bergolak, ia merasa ada secercah harapan dalam kata-kata sederhana itu.`,
       side: "left",
-      next: null
+      next: "chapter5"
     },
     {
       text: `Jaxy membalas:
